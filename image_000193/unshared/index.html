@@ -28,7 +28,8 @@
 <div class='card'><img src='../pca_clip_pc6.png' alt='PC6'><div class='label'>PC6</div></div>
 </div>
 <h3>Sliding Correlations</h3>
-<p>Dot product of entire band as template over CLIP features (stride=1, then upsampled to 24x24).</p>
+<p>Dot Product of nxn band as template over CLIP: L0=12x12, L1=6x6, L2 & LL=3x3</p>
+<p>Overlap template with stride 1 --> Then upsample to 24x24 for comparison. w/o upsampling, would be L0=13x13, L1=19x19, L2 & LL=22x22.</p>
 <p><strong>Note: vmin/vmax shared across all 3 bands within each level.</strong></p>
 <img src='../slidingcorr_unified.png' alt='All levels with shared vmin/vmax per level' class='single-img'>
 <h3>Top-10 tokens per band (by L2 norm) + average-of-maps</h3>
