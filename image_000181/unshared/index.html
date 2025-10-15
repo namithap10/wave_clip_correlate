@@ -29,12 +29,12 @@
 </div>
 <h3>Sliding Correlations</h3>
 <p>Dot product of entire band as template over CLIP features (stride=1, then upsampled to 24x24).</p>
-<p>**Note: vmin/vmax shared across all 3 bands within each level.**</p>
+<p><strong>Note: vmin/vmax shared across all 3 bands within each level.</strong></p>
 <img src='../slidingcorr_unified.png' alt='All levels with shared vmin/vmax per level' class='single-img'>
 <h3>Top-10 tokens per band (by L2 norm) + average-of-maps</h3>
 <p>Pick top-k wavelet tokens (by L2 norm) per band. Perform correlation of each token with the CLIP spatial map.</p>
 <p>Rows = k tokens | Last row = Average of ALL token correlations in that band.</p>
-<p>**vmin/vmax INDEPENDENT for each token map**</p>
+<p><strong>vmin/vmax INDEPENDENT for each token map.</strong></p>
 <h3>Level 0: 12x12, 3 bands - LH (Horizontal), HL (Vertical), HH (Diagonal)</h3>
 <div class='grid'>
 <div class='card'><img src='pertoken_L0_LH.png' alt=''><div class='label'></div></div>

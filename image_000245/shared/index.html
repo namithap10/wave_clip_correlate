@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset='utf-8'><title>Wavelet↔CLIP Analysis: image_000175.jpg (Independent vmin/vmax)</title>
+<!DOCTYPE html><html><head><meta charset='utf-8'><title>Wavelet↔CLIP Analysis: image_000245.jpg (Shared vmin/vmax)</title>
 <style>
   body { font-family: Arial, sans-serif; margin: 20px; color: #333; }
   h2 { margin-bottom: 6px; }
@@ -13,12 +13,12 @@
   .card img { width: 100%; height: 100%; object-fit: contain; display: block; }
   .label { font-size: 13px; color: #555; margin-top: 8px; word-break: break-word; }
 </style></head><body>
-<h2>Wavelet↔CLIP Analysis: image_000175.jpg (Independent vmin/vmax)</h2>
+<h2>Wavelet↔CLIP Analysis: image_000245.jpg (Shared vmin/vmax)</h2>
 <div class='legend'>Legend: LH = horizontal, HL = vertical, HH = diagonal, LL = approximation (low). CLIP token grid: 24x24. Level sizes: L0 = 12x12, L1 = 6x6, L2 = 3x3, LL = 3x3.</div>
 <h3>Preview</h3>
 <div class='grid'>
 <div class='card'><img src='../input_image.jpg' alt='Input (Original)'><div class='label'>Input (Original)</div></div>
-<div class='card'><img src='../image_000175_cropped.jpg' alt='Processed Input for CLIP - 336x336'><div class='label'>Processed Input for CLIP - 336x336</div></div>
+<div class='card'><img src='../image_000245_cropped.jpg' alt='Processed Input for CLIP - 336x336'><div class='label'>Processed Input for CLIP - 336x336</div></div>
 </div>
 <h3>PCA on CLIP features - 24x24 (Upsampled for viewing)</h3>
 <div class='grid'>
@@ -34,7 +34,7 @@
 <h3>Top-10 tokens per band (by L2 norm) + average-of-maps</h3>
 <p>Pick top-k wavelet tokens (by L2 norm) per band. Perform correlation of each token with the CLIP spatial map.</p>
 <p>Rows = k tokens | Last row = Average of ALL token correlations in that band.</p>
-<p><strong>vmin/vmax INDEPENDENT for each token map.</strong></p>
+<p><strong>vmin/vmax SHARED across all top-k tokens within each band.</strong></p>
 <h3>Level 0: 12x12, 3 bands - LH (Horizontal), HL (Vertical), HH (Diagonal)</h3>
 <div class='grid'>
 <div class='card'><img src='pertoken_L0_LH.png' alt=''><div class='label'></div></div>
